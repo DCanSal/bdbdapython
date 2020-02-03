@@ -1,0 +1,30 @@
+decisiones de diseño:
+
+A1: los diccionarios desde el principio facilitaba mucho la escalabilidad del código.
+A2: para A2 fue muy útil definir los diccionarios en A1. Usar el np.random.choice fue fortuito, pero funcionó.
+A3: la función get_archivo() está sacada directamente de la documentación de clase. Tuve la conveniencia de que el archivo venía ordenado ya. Así que simplemente
+fue cuestión de escribirlo en el mismo orden una vez ya tuve las stopword fuera.
+para el random_word_corpus_generator me pareció mucho más sencillo seguir trabajando con el archivo lineas que ya venía dado antes que leer directamente del fichero.
+A4: cometí el error de no preguntar. Basándome en la foto del pdf supuse que la longitud de los mensajes era variable pero que no se debían de extender mucho de ahí 
+que pusiera un límite de 12 palabras a los mensajes y que cada mensaje tuviera entre 3 y 12 palabras. Con el bucle y el np.random.choice conseguí hacerlo rápidamente.
+B1: desde el principio no entendí el planteamiento map/reduce y sólo pensé en obtener un dataframe con las condiciones necesarias. Fue lo primero que hice: la función 
+create_df_messages_bien() y luego le añadí, basándome en el mismo código lo que pedía el apartado 5. 
+B2: una vez más, el haber ahondado en el uso de diccionarios vino muy bien para trabajar con las matrices. convertir el dataframe de mensajes en un diccionario y posteriormente
+en una matriz a través de bucles parecía casi intuitivo dado que es el método que aplico desde el principio de la tarea.
+B3: es la primera vez que programo en Python. Estoy seguro de que hay muchas maneras de hacer el web-scraping mejor. En este caso, todo fue prueba y error hasta lograr 
+un resultado convincente. Aún así me equivoqué con el gdp y por falta de tiempo no lo logré cambiar a tiempo.
+El apartado b) me dio problemas en el uso de agenda_ampliada y agenda_mapa_ampliada. La lectura del fichero txt devolvía un int cuando en el agenda del programa original era un set
+un amigo mío (Gabriel Galeote Checa al que referenciaré más abajo) lo resolvió con esta linea float(list(agenda_ampliada[letras[i]])[0]). Admito no entender cómo funciona.
+
+Durante la realización de este trabajo he recibido ayuda puntual de dos amigos: Gabriel Galeote Checa(Linkedin: ggche) y Ángel Rodríguez Rivero (Linkedin: angelrodriguezrivero)
+No obstante, considero que no estoy entregando trabajo realizado por ninguno de ellos.
+
+Nota: no he añadido al notebook ni al pdf la comprobación del apartado B3_9b puesto que es muy difícil de proyectar o hacer print de forma comprensible. No obstante, en la 
+linea de comando se ve perfectamente. 
+
+Autoevaluación:
+Es la primera vez que progamo en Python. Me he quedado a la mitad en muchos aspectos de la tarea, mi documentación es cuanto menos sub-óptima (nunca antes había 
+escrito nada parecido), he sido incapaz de entender el paradigma map/reduce por mí mismo y solamente podría haberlo entregado con ayuda externa, no estoy adjuntando
+el ejercicio 10 y con casi total seguridad la mayoría de los cálculos están mal. 
+No obstante, considero que el grueso del programa funciona bien y, personalmente, estoy muy orgulloso de lo que estoy entregando. Creo que en la suma del total, me podría
+merecer un 6.
